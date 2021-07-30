@@ -23,26 +23,3 @@ function medianaSalarios(lista) {
     return personaMitad;
   }
 }
-
-// Mediana General
-
-const salariosCol = colombia.map(function (persona) {
-  return persona.salary;
-});
-
-const salariosColSorted = salariosCol.sort(function (SalarioA, SalarioB) {
-  return SalarioA - SalarioB;
-});
-
-const medianaGeneralCol = medianaSalarios(salariosColSorted);
-
-//mediana del top 10%
-
-const spliceStart = salariosColSorted.length - salariosColSorted.length * 0.9;
-const spliceCount = salariosColSorted.length - spliceStart;
-
-const salariosTopCol = salariosColSorted.splice(spliceCount, spliceStart);
-
-const medianaTop10Col = medianaSalarios(salariosTopCol);
-
-console.log({ medianaGeneralCol }, medianaTop10Col);
