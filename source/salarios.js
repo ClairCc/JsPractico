@@ -79,3 +79,27 @@ colombia.push({
   name: "Bill Gates",
   salary: 100000000,
 });
+
+function calcularPerimetroCuadrado() {
+  const input = document.getElementById("ladoCuadrado");
+  const value = input.value;
+  const perimetro = perimetroCuadrado(value);
+  const perimetroCuadradoResultado =
+    document.getElementById("perimetroCuadrado");
+  if (perimetro !== 0) {
+    perimetroCuadradoResultado.innerText = `El perimetro es ${perimetro}`;
+  } else {
+    perimetroCuadradoResultado.innerText = `Digita el lado del cuadrado para hayar el perimetro`;
+  }
+}
+function calcularAreaCuadrado() {
+  const input = document.getElementById("ladoCuadrado");
+  const value = input.value;
+  const area = areaCuadrado(value);
+  const areaCuadradoResultado = document.getElementById("areaCuadrado");
+  if (area !== 0) {
+    areaCuadradoResultado.innerText = `El area es  ${area}`;
+  } else {
+    areaCuadradoResultado.innerText = `Digita el lado del cuadrado para hayar el area`;
+  }
+}
