@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figuras geometricas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Figuras geometricas</h1>
+    </header>
+    <p>Primer curso del taller practico de Js</p>
+
+    <form action="">
+      <label for="figura">¿Calcula el areo o perimetro de?</label>
+      <p class="figura"></p>
+
+      <select name="" id="seleccion" onclick="hola()">
+        <datalist id="figura">
+          <option value="sinSeleccion">Selecciona una opcion</option>
+          <option value="Triangulo">Triangulo</option>
+          <option value="Circulo">Circulo</option>
+          <option value="Cuadrado">Cuadrado</option>
+        </datalist>
+      </select>
+      <section id="seleccionTriangulo" class="Triangulo">
+        <form action="">
+          <label for="baseTriangulo">¿Cual es la base del triangulo?</label
+          ><input type="number" placeholder="base" id="baseTriangulo" />
+          <label for="lado1Triangulo"
+            >¿Cual es el primer lado del triangulo?</label
+          ><input type="number" id="lado1Triangulo" />
+          <label for="lado2Triangulo"
+            >¿Cual es el segundo lado del triangulo?</label
+          ><input type="number" id="lado2Triangulo" />
+          <button type="button" onclick="calcularPerimetroOAreaTriangulo()">
+            Calcular Area y Perimetro
+          </button>
+          <p id="trianguloReturn"></p>
+        </form>
+      </section>
+      <section id="seleccionCirculo" class="Circulo">
+        <form>
+          <label for="radio">¿Cual es el radio del circulo?</label
+          ><input type="number" id="radio" />
+          <button type="button" onclick="perimetrOAreaCirculo()">Hola</button>
+        </form>
+        <p id="perimetroCirculo"></p>
+        <p id="areaCirculo"></p>
+      </section>
+      <section id="seleccionCuadrado" class="Cuadrado">
+        <form action="">
+          <label for="ladoCuadrado"
+            >¿Cual es la medida de un lado del cuadrado?</label
+          ><input type="number" id="ladoCuadrado" />
+          <button type="button" onclick="calcularAreaOCuadrado()">
+            Calcular perimetro
+          </button>
+          <button type="button" onclick="calcularAreaOCuadrado()">
+            Calcular el area
+          </button>
+          <p id="perimetroCuadrado"></p>
+          <p id="areaCuadrado"></p>
+        </form>
+      </section>
+    </form>
+    <script src="source/figuras.js"></script>
+  </body>
+</html>

@@ -1,5 +1,7 @@
 const personas = [];
 function agregarPersonas() {
+  const textoTopSalarios = document.getElementById("topSalariosHtml");
+  const textoMedianaSalarios = document.getElementById("medianaSalarios");
   const nombreHtml = document.getElementById("nombreHtml");
   const salarioHtml = document.getElementById("salarioHtml");
   const valorNombre = nombreHtml.value;
@@ -20,4 +22,19 @@ function agregarPersonas() {
     organizarSalarios.length - organizarSalarios.length * 0.9;
   const inicioSplice = organizarSalarios.length - finalizaSplice;
   const salariosTop = organizarSalarios.splice(inicioSplice, finalizaSplice);
+  console.log(salariosTop);
+
+  function mostrar() {
+    textoMedianaSalarios.style.display = "block";
+    textoMedianaSalarios.innerText = `La mediana de los salarios son : ${mediana}`;
+    if (salariosTop < 10) {
+      textoTopSalarios.style.display = "block";
+      textoTopSalarios.innerText = `Agrega mas salarios`;
+    } else {
+      textoTopSalarios.innerText = `El top 10 de los salarios es ${medianaSalarios(
+        salariosTop
+      )}`;
+    }
+  }
+  mostrar();
 }
