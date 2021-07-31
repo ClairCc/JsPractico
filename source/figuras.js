@@ -16,9 +16,9 @@ function calcularPerimetroOAreaTriangulo() {
   const base = document.getElementById("baseTriangulo");
   const lado1Triangulo = document.getElementById("lado1Triangulo");
   const lado2Triangulo = document.getElementById("lado2Triangulo");
-  const baseValor = base.value;
-  const lado1TrianguloValor = lado1Triangulo.value;
-  const lado2TrianguloValor = lado2Triangulo.value;
+  const baseValor = Number(base.value);
+  const lado1TrianguloValor = Number(lado1Triangulo.value);
+  const lado2TrianguloValor = Number(lado2Triangulo.value);
   const trianguloReturn = document.getElementById("trianguloReturn");
   const perimetro = lado1TrianguloValor + lado2TrianguloValor + baseValor;
   const area = Math.sqrt((baseValor / 2) ** 2 + lado1TrianguloValor ** 2);
