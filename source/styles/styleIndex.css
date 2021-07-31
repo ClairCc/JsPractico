@@ -80,14 +80,33 @@ body {
 
 .cards {
   margin-top: 20px;
-  width: 330px;
+  width: 400px;
   height: 170px;
   border-radius: 20px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .cards a {
   color: #000;
   text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5px;
+  font-weight: bold;
+}
+.cards a span {
+  padding-left: 3px;
+}
+.cards h4 {
+  font-size: 1.7rem;
+  margin-left: 10px;
+  font-weight: bold;
+}
+.cards a,
+.cards p {
+  margin-top: 16px;
+  font-size: 1.5rem;
 }
 .main-container_cards {
   display: flex;
@@ -95,6 +114,7 @@ body {
 }
 .main-section_card-description {
   display: flex;
+  align-items: center;
 }
 .main-section_card1 {
   background-color: #ff4d4d;
@@ -104,4 +124,6 @@ body {
 }
 .main-section_card3 {
   background-color: #9362b2;
+}
+.main-section_card1 {
 }
