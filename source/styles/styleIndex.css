@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #1e1146;
+}
+.header {
+  background: linear-gradient(90deg, #1f114a -3.89%, #180e31 102.92%);
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 2px 29px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 1;
+}
+.header-container_img,
+.header-container_img img {
+  height: 50px;
+}
+.nav-ul {
+  list-style: none;
+  font-size: 1.7rem;
+  display: flex;
+  color: white;
+  font-weight: 500;
+  align-items: center;
+}
+.nav-ul li {
+  padding: 0 12px;
+}
+.nav-ul li a,
+.nav-ul a {
+  text-decoration: none;
+  color: white;
+}
+.nav-ul_login {
+  background-color: #65ab13;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  width: 170px;
+  margin-right: 10px;
+}
+.espacio {
+  height: 65px;
+}
+.main-title_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-title,
+.main-subtitle {
+  color: white;
+  letter-spacing: -0.1rem;
+}
+.main-title {
+  margin-top: 40px;
+  font-size: 5.5rem;
+}
+.main-subtitle {
+  margin-top: 10px;
+  font-size: 2rem;
+}
+.main-section_figureContainer,
+.main-section_figureContainer img {
+  height: 40px;
+}
+
+.cards {
+  margin-top: 20px;
+  width: 330px;
+  height: 170px;
+  border-radius: 20px;
+  padding: 20px;
+}
+.cards a {
+  color: #000;
+  text-decoration: none;
+}
+.main-container_cards {
+  display: flex;
+  justify-content: space-around;
+}
+.main-section_card-description {
+  display: flex;
+}
+.main-section_card1 {
+  background-color: #ff4d4d;
+}
+.main-section_card2 {
+  background-color: #33b1ff;
+}
+.main-section_card3 {
+  background-color: #9362b2;
+}
