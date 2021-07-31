@@ -29,65 +29,92 @@
       </nav>
     </header>
     <div class="espacio"></div>
-    <p>Primer curso del taller practico de Js</p>
-
-    <form action="">
-      <label for="figura">¿Calcula el areo o perimetro de?</label>
-      <p class="figura"></p>
-
-      <select name="" id="seleccion" onclick="hola()" class="seleccion">
-        <option value="sinSeleccion">Selecciona una opcion</option>
-        <option value="Triangulo">Triangulo</option>
-        <option value="Circulo">Circulo</option>
-        <option value="Cuadrado">Cuadrado</option>
-      </select>
-      <section id="seleccionTriangulo" class="Triangulo">
+    <main class="main">
+      <form action="">
         <form action="">
-          <label for="baseTriangulo">¿Cual es la base del triangulo?</label
-          ><input type="number" placeholder="base" id="baseTriangulo" />
-          <label for="lado1Triangulo"
-            >¿Cual es el primer lado del triangulo?</label
-          ><input type="number" id="lado1Triangulo" />
-          <label for="lado2Triangulo"
-            >¿Cual es el segundo lado del triangulo?</label
-          ><input type="number" id="lado2Triangulo" />
-          <button type="button" onclick="calcularPerimetroOAreaTriangulo()">
-            Calcular Area y Perimetro
-          </button>
-          <p id="trianguloReturn"></p>
+          <div class="seleccion-figuras">
+            <label for="figuritas" class="main-form_label"
+              >Calcula el perimetro o el area de un</label
+            >
+            <select
+              name=""
+              id="figuritas"
+              class="main-form_select"
+              onclick="definirFigura()"
+            >
+              <option value="selecciona">Selecciona una opcion</option>
+              <option value="Circulo">Circulo</option>
+              <option value="Cuadrado">Cuadrado</option>
+              <option value="Triangulo">Triangulo</option>
+            </select>
+          </div>
         </form>
-      </section>
-      <section id="seleccionCirculo" class="Circulo">
-        <form>
-          <label for="radio">¿Cual es el radio del circulo?</label
-          ><input type="number" id="radio" />
-          <button type="button" onclick="perimetrOAreaCirculo()">Hola</button>
-        </form>
-        <p id="perimetroCirculo"></p>
-        <p id="areaCirculo"></p>
-      </section>
-      <section id="seleccionCuadrado" class="Cuadrado">
-        <form action="">
-          <label for="ladoCuadrado"
-            >¿Cual es la medida de un lado del cuadrado?</label
-          ><input type="number" id="ladoCuadrado" />
-          <button type="button" onclick="calcularAreaOCuadrado()">
-            Calcular perimetro
-          </button>
-          <button type="button" onclick="calcularAreaOCuadrado()">
-            Calcular el area
-          </button>
-          <p id="perimetroCuadrado"></p>
-          <p id="areaCuadrado"></p>
-        </form>
-      </section>
-    </form>
-    <select name="" id="figuritas" onclick="funcion()">
-      <option value="selecciona">Selecciona una opcion</option>
-      <option value="Carro">Carro</option>
-      <option value="Abeja">Abeja</option>
-      <option value="Pera">Pera</option>
-    </select>
+
+        <section id="seleccionTriangulo" class="Triangulo">
+          <form action="" class="section-form-style">
+            <label for="baseTriangulo">¿Cual es la base del triangulo?</label
+            ><input
+              type="number"
+              placeholder="base"
+              id="baseTriangulo"
+              class="input_seleccion"
+            />
+            <label for="lado1Triangulo"
+              >¿Cual es el primer lado del triangulo?</label
+            ><input type="number" id="lado1Triangulo" class="input_seleccion" />
+            <label for="lado2Triangulo"
+              >¿Cual es el segundo lado del triangulo?</label
+            ><input
+              type="number"
+              id="lado2Triangulo"
+              class="input_seleccion"
+              class="input_seleccion"
+            />
+            <button type="button" onclick="calcularPerimetroOAreaTriangulo()">
+              Calcular Area y Perimetro
+            </button>
+            <p id="trianguloReturn"></p>
+          </form>
+        </section>
+        <section id="seleccionCirculo" class="Circulo">
+          <form class="section-form-style">
+            <label for="radio" class="selection-label_title"
+              >¿Cual es el radio del circulo?</label
+            ><input
+              type="number"
+              id="radio"
+              class="input_seleccion"
+              placeholder="Radio"
+            />
+            <button
+              type="button"
+              onclick="perimetrOAreaCirculo()"
+              class="section-from_button"
+            >
+              Hola
+            </button>
+          </form>
+          <p id="perimetroCirculo"></p>
+          <p id="areaCirculo"></p>
+        </section>
+        <section id="seleccionCuadrado" class="Cuadrado">
+          <form action="" class="section-form-style">
+            <label for="ladoCuadrado"
+              >¿Cual es la medida de un lado del cuadrado?</label
+            ><input type="number" id="ladoCuadrado" class="input_seleccion" />
+            <button type="button" onclick="calcularAreaOCuadrado()">
+              Calcular perimetro
+            </button>
+            <button type="button" onclick="calcularAreaOCuadrado()">
+              Calcular el area
+            </button>
+            <p id="perimetroCuadrado"></p>
+            <p id="areaCuadrado"></p>
+          </form>
+        </section>
+      </form>
+    </main>
+
     <script src="source/figuras.js"></script>
   </body>
 </html>

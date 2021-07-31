@@ -63,30 +63,7 @@ function calcularAreaOCuadrado() {
   }
 }
 
-function hola() {
-  const seleccion = document.getElementById("seleccion");
-  const valor = seleccion.value;
-  const Circulo = document.getElementById("seleccionCirculo");
-  const Cuadrado = document.getElementById("seleccionCuadrado");
-  const Triangulo = document.getElementById("seleccionTriangulo");
-  console.log(valor);
-  if (valor === "Circulo") {
-    Circulo.style.display = "block";
-    Cuadrado.style.display = "none";
-    Triangulo.style.display = "none";
-  } else if (valor === "Cuadrado") {
-    Cuadrado.style.display = "block";
-    Circulo.style.display = "none";
-    Triangulo.style.display = "none";
-    calcularPerimetroCuadrado();
-  } else if (valor === "Triangulo") {
-    Circulo.style.display = "none";
-    Cuadrado.style.display = "none";
-    Triangulo.style.display = "block";
-  }
-}
-
-function funcion() {
+function definirFigura() {
   const seleccion = document.getElementById("figuritas");
   const value = seleccion.value;
   const Circulo = document.getElementById("seleccionCirculo");
@@ -97,9 +74,17 @@ function funcion() {
     Circulo.style.display = "none";
     Cuadrado.style.display = "none";
     Triangulo.style.display = "none";
-  } else if (value === "Carro") {
+  } else if (value === "Circulo") {
     Circulo.style.display = "block";
     Cuadrado.style.display = "none";
     Triangulo.style.display = "none";
+  } else if (value === "Cuadrado") {
+    Circulo.style.display = "none";
+    Cuadrado.style.display = "block";
+    Triangulo.style.display = "none";
+  } else {
+    Circulo.style.display = "none";
+    Cuadrado.style.display = "none";
+    Triangulo.style.display = "block";
   }
 }
