@@ -85,3 +85,21 @@ function hola() {
     Triangulo.style.display = "block";
   }
 }
+
+function funcion() {
+  const seleccion = document.getElementById("figuritas");
+  const value = seleccion.value;
+  const Circulo = document.getElementById("seleccionCirculo");
+  const Cuadrado = document.getElementById("seleccionCuadrado");
+  const Triangulo = document.getElementById("seleccionTriangulo");
+  console.log(value);
+  if (value === "selecciona") {
+    Circulo.style.display = "none";
+    Cuadrado.style.display = "none";
+    Triangulo.style.display = "none";
+  } else if (value === "Carro") {
+    Circulo.style.display = "block";
+    Cuadrado.style.display = "none";
+    Triangulo.style.display = "none";
+  }
+}

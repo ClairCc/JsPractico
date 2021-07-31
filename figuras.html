@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Figuras geometricas</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./source/styles/styleFiguras.css" />
     <link rel="stylesheet" href="./source/styles/allStyles.css" />
   </head>
   <body>
@@ -35,13 +35,11 @@
       <label for="figura">¿Calcula el areo o perimetro de?</label>
       <p class="figura"></p>
 
-      <select name="" id="seleccion" onclick="hola()">
-        <datalist id="figura">
-          <option value="sinSeleccion">Selecciona una opcion</option>
-          <option value="Triangulo">Triangulo</option>
-          <option value="Circulo">Circulo</option>
-          <option value="Cuadrado">Cuadrado</option>
-        </datalist>
+      <select name="" id="seleccion" onclick="hola()" class="seleccion">
+        <option value="sinSeleccion">Selecciona una opcion</option>
+        <option value="Triangulo">Triangulo</option>
+        <option value="Circulo">Circulo</option>
+        <option value="Cuadrado">Cuadrado</option>
       </select>
       <section id="seleccionTriangulo" class="Triangulo">
         <form action="">
@@ -84,6 +82,12 @@
         </form>
       </section>
     </form>
+    <select name="" id="figuritas" onclick="funcion()">
+      <option value="selecciona">Selecciona una opcion</option>
+      <option value="Carro">Carro</option>
+      <option value="Abeja">Abeja</option>
+      <option value="Pera">Pera</option>
+    </select>
     <script src="source/figuras.js"></script>
   </body>
 </html>
