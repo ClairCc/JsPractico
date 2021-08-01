@@ -5,21 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Salarios</title>
+    <link rel="stylesheet" href="./source/styles/allStyles.css" />
     <link rel="stylesheet" href="./source/styles/salarios.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./source/styles/styleSalarios.css" />
   </head>
   <body>
-    <h1>Salarios</h1>
-    <form action="">
-      <label for="">Agrega la persona</label
-      ><input type="text" id="nombreHtml" />
-      <label for="">Agrega su salario</label
-      ><input type="number" id="salarioHtml" />
+    <header class="header">
+      <figure class="header-container_img">
+        <a href="/index.html">
+          <img src="./source/img/platziMath.png" alt="Logo" />
+        </a>
+      </figure>
+      <nav class="nav">
+        <ul class="nav-ul">
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./figuras.html">Perimetro</a></li>
+          <li><a href="./figuras.html">Area</a></li>
+          <li><a href="./descuentos.html">Descuentos</a></li>
+          <li><a href="./salarios.html">Salarios</a></li>
+          <a href="">
+            <li class="nav-ul_login">Iniciar Sesion</li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <div class="espacio"></div>
+    <main class="main">
+      <div class="main-container">
+        <h2 class="main-title">Agregar personas</h2>
+        <form action="">
+          <input
+            type="text"
+            id="nombreHtml"
+            class="main-container_input input1"
+            placeholder="Nombre"
+          />
+          <input
+            type="number"
+            id="salarioHtml"
+            class="main-container_input input2"
+            placeholder="Salario"
+          />
 
-      <button type="button" onclick="agregarPersonas()">Agregar</button>
-    </form>
+          <button
+            type="button"
+            onclick="agregarPersonas()"
+            class="section-from_button"
+          >
+            Agregar
+          </button>
+        </form>
+      </div>
+    </main>
     <section>
-      <p id="medianaSalarios"></p>
-      <p id="topSalariosHtml"></p>
+      <p id="medianaSalarios" class="resultado"></p>
+      <p id="topSalariosHtml" class="resultado"></p>
     </section>
     <script src="./source/salarios.js"></script>
     <script src="./source/analisis.js"></script>
