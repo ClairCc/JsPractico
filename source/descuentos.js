@@ -24,5 +24,7 @@ function PriceDiscount() {
   );
 
   const resultP = document.getElementById("ResultP");
-  resultP.innerText = `El precio con descuento son: $${precioCondescuento}`;
+  resultP.innerText = `${precioCondescuento}`;
+  const ahorrado = document.getElementById("Ahorrado");
+  ahorrado.innerText = ` ${priceValue - precioCondescuento}`;
 }

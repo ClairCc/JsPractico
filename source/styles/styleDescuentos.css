@@ -1,0 +1,66 @@
+.main-container {
+  background-color: #0d0526;
+  width: 90vw;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 16px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: normal;
+  margin-top: 30px;
+}
+.main-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  letter-spacing: 2%;
+  font-family: "Karla";
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+.main input {
+  border: none;
+  outline: none;
+  padding: 0 20px;
+  height: 35px;
+  border-radius: 80px;
+}
+.descuento,
+.precioOriginal,
+.cupon {
+  display: flex;
+  flex-direction: column;
+}
+.precioOriginal,
+.cupon {
+  width: 220px;
+}
+.descuento {
+  width: 110px;
+}
+.main-form {
+  display: flex;
+  justify-content: space-around;
+}
+.idk {
+  display: flex;
+  flex-direction: column;
+}
+.button_center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.section-from_button {
+  width: 190px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #33b1ff;
+  color: #fff;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  margin: 20px auto;
+}

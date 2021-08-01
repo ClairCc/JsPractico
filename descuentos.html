@@ -5,28 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Porcentajes y descuentos</title>
+    <link rel="stylesheet" href="./source/styles/styleDescuentos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./source/styles/allStyles.css" />
   </head>
   <body>
-    <header>
-      <h1>Descuentos</h1>
+    <header class="header">
+      <figure class="header-container_img">
+        <a href="/index.html">
+          <img src="./source/img/platziMath.png" alt="Logo" />
+        </a>
+      </figure>
+      <nav class="nav">
+        <ul class="nav-ul">
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./figuras.html">Perimetro</a></li>
+          <li><a href="./figuras.html">Area</a></li>
+          <li><a href="./descuentos.html">Descuentos</a></li>
+          <li><a href="./salarios.html">Salarios</a></li>
+          <a href="">
+            <li class="nav-ul_login">Iniciar Sesion</li>
+          </a>
+        </ul>
+      </nav>
     </header>
-    <p>Este es el segundo taller del curso práctico de JS</p>
-    <section>
-      <h2>Calcula el precio a pagar de tus productos con descuento</h2>
-      <form action="">
-        <label for="InputPrice"> Escribe el precio de tu producto </label>
-        <input type="number" name="" id="InputPrice" />
-        <label for="InputDiscount"> Escribe el descuento de tu producto </label>
-        <input type="number" name="" id="InputDiscount" />
-        <label for="Cupon">¿Tienes algun cupon?</label>
-        <input type="text" name="" id="Cupon" />
-        <button type="button" onclick="PriceDiscount()">
-          Calcular el precio con descuento
-        </button>
-
-        <p id="ResultP"></p>
-      </form>
-    </section>
+    <div class="espacio"></div>
+    <div class="main-container">
+      <main class="main">
+        <h2 class="main-title">Porcentajes</h2>
+        <form action="" class="main-form">
+          <div class="precioOriginal">
+            <label for="InputPrice"> Precio Original </label>
+            <input type="number" name="" id="InputPrice" />
+          </div>
+          <div class="descuento">
+            <label for="InputDiscount"> Descuento </label>
+            <input type="number" name="" id="InputDiscount" />
+          </div>
+          <div class="cupon">
+            <label for="Cupon">¿Tienes algun cupon?</label>
+            <input type="text" name="" id="Cupon" />
+          </div>
+          <div class="idk">
+            <p>El precio con descuento son:</p>
+            <p id="ResultP"></p>
+          </div>
+          <div class="idk">
+            Te ahorraste
+            <p id="Ahorrado"></p>
+          </div>
+        </form>
+        <div class="button_center">
+          <button
+            type="button"
+            onclick="PriceDiscount()"
+            class="section-from_button"
+          >
+            Calcular
+          </button>
+        </div>
+      </main>
+    </div>
 
     <script src="./source/descuentos.js"></script>
   </body>
