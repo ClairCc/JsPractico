@@ -46,10 +46,10 @@
   display: flex;
   flex-direction: column;
 }
+
 .button_center {
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 .section-from_button {
   width: 190px;
@@ -63,4 +63,10 @@
   cursor: pointer;
   outline: none;
   margin: 20px auto;
+}
+.main-form label,
+.idk p {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
 }
