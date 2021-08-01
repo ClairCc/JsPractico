@@ -20,10 +20,12 @@ function calcularPerimetroOAreaTriangulo() {
   const lado1TrianguloValor = Number(lado1Triangulo.value);
   const lado2TrianguloValor = Number(lado2Triangulo.value);
   const trianguloReturn = document.getElementById("trianguloReturn");
+  const trianguloReturn2 = document.getElementById("trianguloReturn2");
   const perimetro = lado1TrianguloValor + lado2TrianguloValor + baseValor;
   const area = Math.sqrt((baseValor / 2) ** 2 + lado1TrianguloValor ** 2);
   if (perimetro && area !== 0) {
-    trianguloReturn.innerText = `El area del triangulo es: ${area} y su perimetro: ${perimetro}`;
+    trianguloReturn.innerText = `El area del triangulo es: ${area}`;
+    trianguloReturn2.innerText = `y el perimetro es: ${perimetro}`;
   }
 }
 console.groupEnd();

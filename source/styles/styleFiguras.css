@@ -7,6 +7,7 @@
 .seleccion-figuras {
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
 }
 .seleccion-figuras label {
   padding-bottom: 20px;
@@ -54,13 +55,13 @@
   border: none;
   outline: none;
   padding: 20px;
+  font-size: 1.6rem;
 }
-.input_seleccion::placeholder {
-  font-size: 1.4rem;
-}
+
 .section-form-style {
   display: flex;
   flex-direction: column;
+  padding-top: 30px;
 }
 .selection-label_title {
   display: flex;
@@ -75,4 +76,10 @@
   border: none;
   font-size: 1.8rem;
   font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  margin: 20px auto;
+}
+.input-selection_p {
+  padding-top: 30px;
 }
