@@ -1,0 +1,46 @@
+.main {
+  width: 95vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80vh;
+  flex-direction: column;
+  background-color: #0d0526;
+  border-radius: 16px;
+  margin: 0 auto;
+  margin-top: 40px;
+  color: #fff;
+}
+.main-title {
+  font-size: 2.2rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+main form .input {
+  border: none;
+  outline: none;
+  padding: 20px;
+  height: 35px;
+  border-radius: 80px;
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+main form .input::placeholder {
+  font-size: 1.4rem;
+}
+.section-from_button {
+  width: 190px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #33b1ff;
+  color: #fff;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  margin: 10px auto;
+}
