@@ -4,3 +4,16 @@
 .main {
   width: 100vw;
 }
+.main-container_img {
+  width: 100vw;
+  padding-left: 0;
+}
+.main-container_img .main_img {
+  width: 70%;
+}
+.main-title_container {
+  text-align: center;
+}
+header nav {
+  display: none;
+}
