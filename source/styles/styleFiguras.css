@@ -30,18 +30,7 @@
   outline: none;
   padding: 0 20px;
 }
-.main {
-  width: 500px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: 80vh;
-  flex-direction: column;
-  background-color: #0d0526;
-  border-radius: 16px;
-  margin: 0 auto;
-  margin-top: 40px;
-}
+
 .Circulo,
 .Cuadrado,
 .Triangulo {
@@ -62,24 +51,46 @@
   display: flex;
   flex-direction: column;
   padding-top: 30px;
+  align-items: center;
 }
 .selection-label_title {
   display: flex;
   justify-content: center;
 }
-.section-from_button {
-  width: 190px;
-  height: 50px;
-  border-radius: 10px;
-  background-color: #33b1ff;
-  color: #fff;
-  border: none;
-  font-size: 1.8rem;
-  font-weight: bold;
-  cursor: pointer;
-  outline: none;
-  margin: 20px auto;
-}
 .input-selection_p {
   padding-top: 30px;
+}
+.input_cuadrado,
+.input_circulo,
+.input_triangulo {
+  width: 25vw;
+  margin: 10px 0;
+}
+.section-form_triangulo {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.button_special_triangulo {
+  order: 1;
+  margin: 0 25%;
+}
+.idk-dik {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 20px;
+
+  align-items: center;
+  flex-wrap: wrap;
+}
+.input-selection_p_triangulo {
+  margin: 0 30% 10px;
+}
+.main {
+  padding-bottom: 30px;
+  height: auto;
 }

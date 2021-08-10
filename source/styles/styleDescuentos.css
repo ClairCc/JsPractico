@@ -1,23 +1,5 @@
-.main-container {
-  background-color: #0d0526;
-  width: 90vw;
-  height: 250px;
-  margin: 0 auto;
-  border-radius: 16px;
-  color: #fff;
-  font-size: 1.6rem;
-  font-weight: normal;
-  margin-top: 30px;
-}
-.main-title {
-  font-size: 3.2rem;
-  font-weight: bold;
-  letter-spacing: 2%;
-  font-family: "Karla";
-  display: flex;
-  justify-content: center;
-  padding: 20px 0;
-}
+
+
 .main input {
   border: none;
   outline: none;

@@ -5,8 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Figuras geometricas</title>
-    <link rel="stylesheet" href="./source/styles/styleFiguras.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./source/styles/allStyles.css" />
+    <link rel="stylesheet" href="./source/styles/styleall.css" />
+    <link rel="stylesheet" href="./source/styles/styleFiguras.css" />
   </head>
   <body>
     <header class="header">
@@ -33,9 +40,9 @@
       <form action="">
         <form action="">
           <div class="seleccion-figuras">
-            <label for="figuritas" class="main-form_label"
-              >Calcula el perimetro o el area de un</label
-            >
+            <h2 for="figuritas" class="main-title">
+              Calcula el perimetro o el area de un
+            </h2>
             <select
               name=""
               id="figuritas"
@@ -51,40 +58,46 @@
         </form>
 
         <section id="seleccionTriangulo" class="Triangulo">
-          <form action="" class="section-form-style">
-            <label for="baseTriangulo">¿Cual es la base del triangulo?</label
-            ><input
-              type="number"
-              placeholder="base"
-              id="baseTriangulo"
-              class="input_seleccion"
-            />
-            <label for="lado1Triangulo"
-              >¿Cual es el primer lado del triangulo?</label
-            ><input
-              placeholder="primer lado"
-              type="number"
-              id="lado1Triangulo"
-              class="input_seleccion"
-            />
-            <label for="lado2Triangulo"
-              >¿Cual es el segundo lado del triangulo?</label
-            ><input
-              placeholder="segundo lado"
-              type="number"
-              id="lado2Triangulo"
-              class="input_seleccion"
-            />
-            <div class="input-selection_p">
+          <form action="" class="section-form-style section-form_triangulo">
+            <div class="idk-dik">
+              <label for="baseTriangulo">¿Cual es la base del triangulo?</label
+              ><input
+                type="number"
+                placeholder="base"
+                id="baseTriangulo"
+                class="input input_triangulo"
+              />
+            </div>
+            <div class="idk-dik">
+              <label for="lado1Triangulo"
+                >¿Cual es el primer lado del triangulo?</label
+              ><input
+                placeholder="primer lado"
+                type="number"
+                id="lado1Triangulo"
+                class="input input_triangulo"
+              />
+            </div>
+            <div class="idk-dik">
+              <label for="lado2Triangulo"
+                >¿Cual es el segundo lado del triangulo?</label
+              ><input
+                placeholder="segundo lado"
+                type="number"
+                id="lado2Triangulo"
+                class="input input_triangulo"
+              />
+            </div>
+            <div class="input-selection_p input-selection_p_triangulo">
               <p id="trianguloReturn"></p>
               <p id="trianguloReturn2"></p>
             </div>
             <button
-              class="section-from_button"
+              class="section-from_button button_special_triangulo"
               type="button"
               onclick="calcularPerimetroOAreaTriangulo()"
             >
-              Calcular Area y Perimetro
+              Calcular
             </button>
           </form>
         </section>
@@ -95,7 +108,7 @@
             ><input
               type="number"
               id="radio"
-              class="input_seleccion"
+              class="input input_circulo"
               placeholder="Radio"
             />
             <div class="input-selection_p">
@@ -120,7 +133,7 @@
               placeholder="Lado Cuadrado"
               type="number"
               id="ladoCuadrado"
-              class="input_seleccion"
+              class="input input_cuadrado"
             />
             <div class="input-selection_p">
               <p id="perimetroCuadrado"></p>
@@ -131,7 +144,7 @@
               type="button"
               onclick="calcularAreaOCuadrado()"
             >
-              Calcular el area y perimetro
+              Calcular
             </button>
           </form>
         </section>
