@@ -3,13 +3,14 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 80vh;
+  height: auto;
   flex-direction: column;
   background-color: #0d0526;
   border-radius: 16px;
   margin: 0 auto;
   margin-top: 40px;
   color: #fff;
+  padding: 10px;
 }
 .main-title {
   font-size: 2.2rem;
