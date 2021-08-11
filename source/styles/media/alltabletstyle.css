@@ -1,0 +1,9 @@
+.nav {
+  display: none;
+}
+.all_container {
+  display: block;
+}
+.header_img-off {
+  display: flex;
+}

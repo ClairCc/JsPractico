@@ -14,8 +14,39 @@
     />
     <link rel="stylesheet" href="./source/styles/allStyles.css" />
     <link rel="stylesheet" href="./source/styles/styleall.css" />
+    <link
+      rel="stylesheet"
+      href="./source/styles/media/alltabletstyle.css"
+      media="(max-width: 850px)"
+    />
   </head>
   <body>
+    <div class="all" id="all">
+      <figure class="all-icon">
+        <a href="#">
+          <img
+            src="./source/Icon/icon-x.svg"
+            alt=""
+            id="iconx"
+            onclick="offMenu()"
+          />
+        </a>
+      </figure>
+      <div class="all_container">
+        <nav class="nav nav-all">
+          <ul class="nav-ul nav-all_ul">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./figuras.html">Perimetro</a></li>
+            <li><a href="./figuras.html">Area</a></li>
+            <li><a href="./descuentos.html">Descuentos</a></li>
+            <li><a href="./salarios.html">Salarios</a></li>
+            <a href="">
+              <li class="nav-ul_login">Iniciar Sesion</li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+    </div>
     <header class="header">
       <figure class="header-container_img">
         <a href="/index.html">
@@ -34,9 +65,20 @@
           </a>
         </ul>
       </nav>
+      <figure class="header_img-off">
+        <a
+          class="header_icon-off"
+          href="#"
+          id="header_icon-off"
+          onclick="headerTablets()"
+        >
+          <img src="./menu.svg" alt="" />
+        </a>
+      </figure>
     </header>
-    <div class="espacio"></div>
-    <div class="main-container">
+    <div class="espacio" id="espacio"></div>
+
+    <div class="main-container" id="main">
       <main class="main">
         <h2 class="main-title">Porcentajes</h2>
         <form action="" class="main-form">
@@ -72,7 +114,7 @@
         </div>
       </main>
     </div>
-
+    <script src="./menu.js"></script>
     <script src="./source/descuentos.js"></script>
   </body>
 </html>
