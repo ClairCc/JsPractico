@@ -1,0 +1,12 @@
+.button_container {
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+.main_form {
+  flex-wrap: wrap;
+}
+.main_form input {
+  margin: 5px 0;
+}

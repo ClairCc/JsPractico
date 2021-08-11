@@ -20,6 +20,11 @@
       href="./source/styles/media/alltabletstyle.css"
       media="(max-width: 850px)"
     />
+    <link
+      rel="stylesheet"
+      href="./source/styles/media/laptopSalarios.css"
+      media="(max-width: 1100px)"
+    />
   </head>
   <body>
     <div class="all" id="all">
@@ -81,7 +86,7 @@
     <main class="main" id="main">
       <div class="main-container">
         <h2 class="main-title">Agregar personas</h2>
-        <form action="">
+        <form action="" class="main_form">
           <input
             type="text"
             id="nombreHtml"
@@ -94,21 +99,23 @@
             class="main-container_input input2"
             placeholder="Salario"
           />
-
-          <button
-            type="button"
-            onclick="agregarPersonas()"
-            class="section-from_button"
-          >
-            Agregar
-          </button>
+          <div class="button_container">
+            <button
+              type="button"
+              onclick="agregarPersonas()"
+              class="section-from_button"
+            >
+              Agregar
+            </button>
+          </div>
         </form>
+        <section class="result_container">
+          <p id="medianaSalarios" class="resultado"></p>
+          <p id="topSalariosHtml" class="resultado"></p>
+        </section>
       </div>
     </main>
-    <section>
-      <p id="medianaSalarios" class="resultado"></p>
-      <p id="topSalariosHtml" class="resultado"></p>
-    </section>
+
     <script src="./menu.js"></script>
     <script src="./source/salarios.js"></script>
     <script src="./source/analisis.js"></script>

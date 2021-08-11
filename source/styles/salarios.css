@@ -1,3 +1,23 @@
 section p {
   display: none;
 }
+#boxi {
+  background-color: tomato;
+  width: 100vw;
+  height: 10vh;
+}
+.main_form {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .section-from_button {
+  margin: 0;
+}
+.main-container {
+  align-items: center;
+}
+.result_container {
+  text-align: center;
+}

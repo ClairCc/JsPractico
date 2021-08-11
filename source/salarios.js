@@ -6,7 +6,7 @@ function agregarPersonas() {
   const salarioHtml = document.getElementById("salarioHtml");
   const valorNombre = nombreHtml.value;
   const valorSalario = Number(salarioHtml.value);
-
+  const agregarPersonas = document.getElementById("personas");
   function constructoraPersona(nombre, salario) {
     this.nombre = nombre;
     this.salario = salario;
@@ -17,12 +17,12 @@ function agregarPersonas() {
     return x.salario;
   });
   const organizarSalarios = salarioPersonas.sort((a, b) => a - b);
+  console.log(organizarSalarios);
   const mediana = medianaSalarios(organizarSalarios);
   const finalizaSplice =
     organizarSalarios.length - organizarSalarios.length * 0.9;
   const inicioSplice = organizarSalarios.length - finalizaSplice;
   const salariosTop = organizarSalarios.splice(inicioSplice, finalizaSplice);
-  console.log(salariosTop);
 
   function mostrar() {
     textoMedianaSalarios.style.display = "block";
