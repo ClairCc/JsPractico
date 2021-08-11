@@ -44,4 +44,5 @@ main form .input::placeholder {
   cursor: pointer;
   outline: none;
   margin: 10px auto;
+  outline: none;
 }
